@@ -32,57 +32,140 @@
         </nav>
 
     </header>
-    <div>
-    <section>
-        <h1>Rooms & prices</h1>
-        <p>Compare the studios side by side, then send a booking request. Prices are per room, per night.</p>
-    </section>
-    <div>
-        <table>
-            <tr>
-                <th></th>
-                <th>Studio 1</th>
-                <th>Studio 2</th>
-                <th>Sauna & relax</th>
-            </tr>
-            <tr>
-                <td>Guests</td>
-                <td>Up to 3 (extra bed)</td>
-                <td>2</td>
-                <td>Add-on to any stay</td>
-            </tr>
-            <tr>
-                <td>Bed</td>
-                <td>Queen 140 cm,firm</td>
-                <td>Queen 140 cm,firm</td>
-                <td>-</td>
-            </tr>
-            <tr>
-                <td>Highlights</td>
-                <td>Dining area for 3, plenty of storage</td>
-                <td>Two windows, private shower, kitchen</td> <!--private shower???-->
-                <td>IR Sauna, vibration plate, massage chair</td>
-            </tr>
-             <tr>
-                <td>Low season</td>
-                <td>860 SEK</td>
-                <td>800 SEK</td>
-                <td>200-350 SEK/h</td>
-            </tr>
-             <tr>
-                <td>High season</td>
-                <td>890 SEK</td>
-                <td>860 SEK</td>
-                <td>200-350/h</td>
-            </tr>
-            <tr>
-                <td>Book studio 1-></td>
-                <td>Book stidio 2-></td>
-                <td>Add to your stay-></td>
-            </tr>          
-        </table>
-
-    </div>
+    <div id="reservations-page">
+        <section>
+            <h1>Rooms & prices</h1>
+            <p>Compare the studios side by side, then send a booking request. Prices are per room, per night.</p>
+        </section>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Studio 1</th>
+                    <th>Studio 2</th>
+                    <th>Sauna & relax</th>
+                </tr>
+                <tr>
+                    <td>Guests</td>
+                    <td>Up to 3 (extra bed)</td>
+                    <td>2</td>
+                    <td>Add-on to any stay</td>
+                </tr>
+                <tr>
+                    <td>Bed</td>
+                    <td>Queen 140 cm, firm</td>
+                    <td>Queen 140 cm, firm</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Highlights</td>
+                    <td>Dining area for 3, plenty of storage</td>
+                    <td>Two windows, private shower, kitchen</td> <!--private shower???-->
+                    <td>IR Sauna, vibration plate, massage chair</td>
+                </tr>
+                <tr>
+                    <td>Low season</td>
+                    <td>860 SEK</td>
+                    <td>800 SEK</td>
+                    <td>200-350 SEK/h</td>
+                </tr>
+                <tr>
+                    <td>High season</td>
+                    <td>890 SEK</td>
+                    <td>860 SEK</td>
+                    <td>200-350/h</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Book studio 1-></td>
+                    <td>Book stidio 2-></td>
+                    <td>Add to your stay-></td>
+                </tr>          
+            </table>
+        </div>
+        <div id="info-container"> <!--extra info-->
+            <div id="info-1" class="info"> 
+            <b>Longer stays</b> from 450 SEK/night 
+            </div>
+            <div class="info">
+                Breakfast not included, add it below
+            </div>
+            <div class="info">
+                Stays over 7 nights: one person per room
+            </div>
+        </div>
+        <div id="booking-container">
+            <div id="booking-form-container"> 
+                <p><h2>Request a booking</h2>Helen confirms availability and payment details by mail</p>     
+                <form>
+                    <fieldset id="room-field">
+                        <legend>Room</legend>
+                        <div class="input-style">
+                            <input type="radio" id="studio1" name="studio" value="studio" checked />
+                            <label for="studio1">Studio 1</label>
+                        </div>
+                        <div class="input-style">
+                            <input type="radio" id="studio2" name="studio" value="studio" />
+                            <label for="studio2">Studio 2</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                            <div>
+                                <label for="checkin">Check in</label>
+                                <input class="input-style" type="date" id="" name="birthdaytime">
+                            </div>
+                            <div>
+                                <label for="checkin">Check out:</label>
+                                <input class="input-style" type="date" id="" name="birthdaytime">
+                            </div>
+                            <div class="card">
+                            <label for="guests">Number of guests (1-3):</label>
+                            <input type="number" id="guests" name="guests" min="1" max="3" />
+                        </div>
+                        <div class="card">
+                            <label for="name">Name</label>
+                                <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                minlength="4"
+                                maxlength="15"
+                                size="15"/>
+                         </div>
+                        <div class="card">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+                        </div>
+                        <div>
+                            <div>
+                                <legend>Extras</legend>
+                                <input type="checkbox" id="extras" name="extras" checked />
+                                <label for="breakfast">Breakfast</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="extras" name="sauna" checked />
+                                <label for="sauna">Sauna & relax session</label>
+                            </div>
+                        </div>
+                        <div>
+                            <legend>Message (Optional)</legend>
+                            <textarea>
+                                id="name"
+                                name="name"
+                            </textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <div><img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg" alt=""></div>
+                <div><h3>Good to know</h3>
+                <p>Rated one of Stockholms best B&B since 2003.<br>
+                800 m from Svedmyra metro, with parking on site.<br>
+                Prefer to call? </p></div>
+            </div>
+        </div>
     
     </div>
 </main>
