@@ -17,19 +17,22 @@ body {
     background-color: var(--color-bg);
 }
 
-.header{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header, h2{
+header, h2{
     font-family: var(--font-heading) , sans-serif;
     color: var(--color-primary);
     font-weight: lighter;
 }
 
-
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
 ul{
     display: flex;
     list-style: none;
@@ -47,7 +50,7 @@ li{
 
 
 }
-li button{
+.book-btn{
     width: 7rem;
     height: 2.4rem;
     border: 1px solid var(--color-border);
@@ -57,6 +60,9 @@ li button{
     font-family: var(--font-heading) , sans-serif;
     font-weight: 600;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 li button:hover {
