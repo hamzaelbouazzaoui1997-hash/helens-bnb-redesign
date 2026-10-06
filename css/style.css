@@ -1,0 +1,64 @@
+:root {
+    --color-bg: #F4F2EC;
+    --color-surface: #FFFFFF;
+    --color-text: #1E2A24;
+    --color-text-secondary: #46534C;
+    --color-primary: #2F5D4A;
+    --color-primary-hover: #1E3F31;
+    --color-tint: #EEF2EE;
+    --color-border: #D8D3C6;
+    --font-heading: "Newsreader", Georgia, serif;
+    --font-body: "Figtree", system-ui, sans-serif;
+}
+
+body {
+    margin: 1rem 5rem;
+    font-family: var(--font-body) , sans-serif;
+    background-color: var(--color-bg);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header, h2{
+    font-family: var(--font-heading) , sans-serif;
+    color: var(--color-primary);
+    font-weight: lighter;
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--color-primary);
+    font-weight: 500;
+
+
+}
+li button{
+    width: 7rem;
+    height: 2.4rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10rem;
+    background-color: var(--color-primary);
+    color: var(--color-tint);
+    font-family: var(--font-heading) , sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+li button:hover {
+    background-color: var(--color-primary-hover);
+}
