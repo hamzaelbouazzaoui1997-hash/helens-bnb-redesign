@@ -68,3 +68,22 @@ li{
 li button:hover {
     background-color: var(--color-primary-hover);
 }
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+
+    section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
