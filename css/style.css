@@ -50,19 +50,29 @@ li{
 
 
 }
-.book-btn{
+.book-btn,
+.btn-out {
     padding: 0 1.2rem;
     height: 2.4rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid;
     border-radius: 10rem;
-    background-color: var(--color-primary);
-    color: var(--color-tint);
-    font-family: var(--font-heading) , sans-serif;
+    font-family: var(--font-heading), sans-serif;
     font-weight: 600;
     cursor: pointer;
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+}
+
+.book-btn {
+    border-color: var(--color-border);
+    background-color: var(--color-primary);
+    color: var(--color-tint);
+}
+
+.btn-out {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 li button:hover {

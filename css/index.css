@@ -1,0 +1,67 @@
+main{
+    margin-top: 3rem;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.banner-text {
+    flex: 1;
+    span{
+        color: var(--color-primary);
+    }
+}
+
+.banner-image {
+    flex: 1.4;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 500;
+    margin: 1rem 0;
+    font-family: var(--font-heading),var(--font-body) , sans-serif ;
+}
+
+.banner-text > p {
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+}
+
+.stats {
+    display: flex;
+    gap: 4rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats strong {
+    font-size: 1.1rem;
+}
+.stats span {
+    font-size: x-small;
+}
