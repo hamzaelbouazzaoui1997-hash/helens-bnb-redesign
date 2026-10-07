@@ -37,10 +37,12 @@ color:var(--color-text);
 }
 
 .about-house {
-display: flex;
-justify-content:space-between;
-align-items: center;
-padding: 48px 0 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-surface);
+    margin: 0 -5rem 96px;
+    padding: 96px 5rem;
 }
 
 .about-house img {
