@@ -183,3 +183,59 @@ color: var(--color-text-secondary);
     padding: 14px 28px;
     border-radius: 10rem;
 }
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
+
+    .about-intro,
+    .about-house,
+    .about-location-row,
+    .about-contact {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .about-intro img,
+    .about-house img,
+    .about-location-row img,
+    .about-intro-text,
+    .about-house-text,
+    .distances,
+    .about-contact-text {
+        width: 100%;
+    }
+
+    .about-intro-text h1 {
+        font-size: 36px;
+    }
+
+    .about-house-text h2,
+    .about-location h2,
+    .about-contact-text h2 {
+        font-size: 30px;
+    }
+
+    .about-intro-text p,
+    .about-house-text p {
+        font-size: 16px;
+    }
+
+    .about-house {
+        padding: 64px 5rem;
+    }
+
+    .about-contact {
+        padding: 64px 5rem;
+    }
+
+    /* Small phones */
+@media (max-width: 600px) {
+    body { margin: 1rem; }
+    .about-house, .about-contact { margin-left: -1rem; margin-right: -1rem; padding: 48px 1rem; }
+    .about-intro-text h1 { font-size: 32px; }
+    .about-house-text h2, .about-location h2, .about-contact-text h2 { font-size: 26px; }
+    .distances li { gap: 16px; }
+}
+
+}
