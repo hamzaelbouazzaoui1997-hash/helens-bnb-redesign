@@ -1,12 +1,18 @@
 main{
-    margin-top: 3rem;
+    font-family: var(--font-heading), sans-serif ;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-weight: lighter;
 }
 
 .banner {
+    margin: 0 5rem 4rem 5rem;
     display: flex;
     align-items: center;
     gap: 4rem;
-    margin-bottom: 3rem;
 }
 
 .banner-text {
@@ -23,7 +29,6 @@ main{
 .banner-image img {
     width: 100%;
     height: 420px;
-    object-fit: cover;
     border-radius: 1rem;
 }
 
@@ -64,4 +69,125 @@ main{
 }
 .stats span {
     font-size: x-small;
+}
+
+
+
+
+
+
+.bg-surface {
+    background-color: var(--color-surface);
+    height: fit-content;
+    padding: 1rem 0 4rem;
+}
+
+.rooms-banner {
+    margin: 4rem 5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rooms-banner h1 {
+    margin: 0;
+}
+
+.compare-link {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.compare-link .material-icons {
+    font-family: 'Material Icons';
+    font-size: 15px !important;
+    line-height: 0 !important;
+    text-decoration: none;
+    font-style: normal;
+}
+
+/* Cards */
+
+.rooms-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.rooms-card {
+    width: 23rem;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    h3{
+        margin: 0.3rem 0;
+    }
+}
+
+.rooms-card img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.room-features {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    span{
+        padding: 0.5rem;
+        border-radius: 1rem;
+
+    }
+    .bg-green{
+        background-color: #EEF2EE;
+        color: var(--color-primary-hover);
+    }
+    .bg-gold{
+        background-color: #F3ECE0;
+        color: #7A5418;
+    }
+}
+
+.room-features span {
+    font-size: 0.8rem;
+}
+
+.guest-benefits{
+    margin: 5rem 5rem 4rem 5rem;
+
+}
+
+.benefits-grid{
+    display: flex;
+    flex-direction: row;
+}
+.benefit-card{
+    display: flex;
+    flex-direction: column;
+    i{
+        color: var(--color-primary);
+        margin-bottom: 1rem;
+    }
+}
+.testimonials{
+    color: var(--color-tint);
+    background-color: var(--color-primary);
+    h1{
+        margin: 5rem 5rem 0 5rem
+    }
+}
+.testimonials-grid{
+    margin: 2rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+
+}
+.testimonials-card{
+    width: 20rem;
 }
