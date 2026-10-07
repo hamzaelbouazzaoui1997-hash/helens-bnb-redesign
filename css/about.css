@@ -1,3 +1,7 @@
+main {
+    padding: 0 5rem;
+}
+
 .about-intro {
     display: flex;
     justify-content: space-between;
@@ -231,11 +235,15 @@ color: var(--color-text-secondary);
     }
 }
 
-/* Small phones */
-@media (max-width: 600px) {
-    body { margin: 1rem; }
-    .about-house, .about-contact { margin-left: -1rem; margin-right: -1rem; padding: 48px 1rem; }
+/* Small screens (matches style.css) */
+@media (max-width: 768px) {
+    main { padding: 0 1.25rem; }
+    .about-house, .about-contact { margin-left: -1.25rem; margin-right: -1.25rem; padding: 48px 1.25rem; }
     .about-intro-text h1 { font-size: 32px; }
     .about-house-text h2, .about-location h2, .about-contact-text h2 { font-size: 26px; }
     .distances li { gap: 16px; }
+}
+
+@media (min-width: 769px) {
+    .mobile-nav { display: none; }
 }

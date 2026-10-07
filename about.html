@@ -13,18 +13,16 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-
     <header>
-
         <h2>Helen's B&B</h2>
-
-        <nav>
+        <nav class="web-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -33,6 +31,21 @@
                     <a href="reservations.html" class="book-btn">Book a room</a>
                 </li>
             </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-item">
+                <i class="material-icons">home</i>
+            </a>
+
+
+            <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+                <i class="material-icons">calendar_month</i>
+            </a>
+
+            <a href="about.html" class="mobile-nav-item active">
+                <i class="material-icons">info</i>
+            </a>
         </nav>
 
     </header>
