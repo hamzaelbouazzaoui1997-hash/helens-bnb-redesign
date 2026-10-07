@@ -14,7 +14,7 @@
 <body>
     <header>
             <h2>Helen's B&B</h2>
-            <nav>
+            <nav class="web-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -24,7 +24,25 @@
                     </li>
                 </ul>
             </nav>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-item active">
+                <i class="material-icons">home</i>
+            </a>
+
+
+            <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+                <i class="material-icons">calendar_month</i>
+            </a>
+
+            <a href="about.html" class="mobile-nav-item">
+                <i class="material-icons">info</i>
+            </a>
+        </nav>
+
     </header>
+
+
 
     <main>
         <section class="banner">
@@ -97,7 +115,7 @@
 
                 <article class="rooms-card">
                     <div>
-                        <img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg"
+                        <img src="images/studio-1.jpg"
                                 alt="Studio 1">
 
                         <div class="card-title">
@@ -128,25 +146,25 @@
 
                 <article class="rooms-card">
                     <div>
-                        <img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg"
+                        <img src="images/studio-2.jpg"
                                 alt="Studio 2">
 
                         <div class="card-title">
                             <h3>Studio 2</h3>
-                            <span>from 860 Kr/night</span>
+                            <span>from 800 SEK/night</span>
                         </div>
                     </div>
 
                     <div class="room-features">
-                        <span class="bg-green">Up to 3 guests</span>
+                        <span class="bg-green">2 guests</span>
                         <span class="bg-green">Queen bed 140 cm</span>
-                        <span class="bg-green">Dining area</span>
+                        <span class="bg-green">Private shower</span>
                     </div>
 
                     <div>
                         <p>
-                            A cosy studio with everything you need for a comfortable
-                            stay.
+                            Small, bright and cosy, with two windows.
+                            Guests often call it romantic.
                         </p>
                     </div>
 
@@ -159,30 +177,31 @@
 
                 <article class="rooms-card">
                     <div>
-                        <img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg"
+                        <img src="images/sauna&relax.jpg"
                                 alt="Studio 3">
 
                         <div class="card-title">
-                            <h3>Studio 3</h3>
-                            <span>from 860 Kr/night</span>
+                            <h3>Sauna & relax</h3>
+                            <span>from 200 Kr/night</span>
                         </div>
                     </div>
 
                     <div class="room-features">
-                        <span class="bg-gold">Up to 3 guests</span>
-                        <span class="bg-gold">Queen bed 140 cm</span>
-                        <span class="bg-gold">Dining area</span>
+                        <span class="bg-gold">Add-on</span>
+                        <span class="bg-gold">IR sauna</span>
+                        <span class="bg-gold">Massage chair</span>
                     </div>
 
                     <div>
                         <p>
-                            A bright and peaceful studio, ideal for short and longer
-                            stays.
+                            Infrared sauna with light therapy, a
+                            vibration plate and a massage chair. Book
+                            by the hour.
                         </p>
                     </div>
 
                     <a href="reservations.html" class="compare-link">
-                        Book Studio 3
+                        Sauna & relax
                         <i class="material-icons" aria-hidden="true">east</i>
                     </a>
                 </article>
