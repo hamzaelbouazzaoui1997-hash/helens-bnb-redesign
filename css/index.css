@@ -177,7 +177,17 @@ h1{
 .testimonials{
     color: var(--color-tint);
     background-color: var(--color-primary);
+    h1{
+        margin: 5rem 5rem 0 5rem
+    }
 }
 .testimonials-grid{
+    margin: 2rem 5rem 5rem 5rem;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
 
+}
+.testimonials-card{
+    width: 20rem;
 }
