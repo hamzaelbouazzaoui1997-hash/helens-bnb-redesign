@@ -7,13 +7,17 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div class="project-disclaimer">
+        <p>Redesign concept by FED28 students · not the official Helens B&B website</p>
+    </div>
     <header>
             <h2>Helen's B&B</h2>
-            <nav>
+            <nav class="web-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -23,7 +27,25 @@
                     </li>
                 </ul>
             </nav>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-item active">
+                <i class="material-icons">home</i>
+            </a>
+
+
+            <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+                <i class="material-icons">calendar_month</i>
+            </a>
+
+            <a href="about.html" class="mobile-nav-item">
+                <i class="material-icons">info</i>
+            </a>
+        </nav>
+
     </header>
+
+
 
     <main>
         <section class="banner">
@@ -73,7 +95,187 @@
 
 
 
+        <div class="bg-surface">
 
+            <article class="rooms-banner">
+                <div>
+                    <h1>Choose your room</h1>
+                    <span>
+                Every studio has its own bed, bathroom access and kitchenette.
+            </span>
+                </div>
+
+                <div>
+                    <a href="reservations.html" class="compare-link">
+                        Compare all prices
+                        <i class="material-icons" aria-hidden="true">east</i>
+                    </a>
+                </div>
+            </article>
+
+
+            <div class="rooms-card-container">
+
+                <article class="rooms-card">
+                    <div>
+                        <img src="images/studio-1.jpg"
+                                alt="Studio 1">
+
+                        <div class="card-title">
+                            <h3>Studio 1</h3>
+                            <span>from 860 Kr/night</span>
+                        </div>
+                    </div>
+
+                    <div class="room-features">
+                        <span class="bg-green">Up to 3 guests</span>
+                        <span class="bg-green">Queen bed 140 cm</span>
+                        <span class="bg-green">Dining area</span>
+                    </div>
+
+                    <div>
+                        <p>
+                            The most spacious studio, with a view of the old granite
+                            rock. Good for longer stays.
+                        </p>
+                    </div>
+
+                    <a href="reservations.html" class="compare-link">
+                        Book Studio 1
+                        <i class="material-icons" aria-hidden="true">east</i>
+                    </a>
+                </article>
+
+
+                <article class="rooms-card">
+                    <div>
+                        <img src="images/studio-2.jpg"
+                                alt="Studio 2">
+
+                        <div class="card-title">
+                            <h3>Studio 2</h3>
+                            <span>from 800 SEK/night</span>
+                        </div>
+                    </div>
+
+                    <div class="room-features">
+                        <span class="bg-green">2 guests</span>
+                        <span class="bg-green">Queen bed 140 cm</span>
+                        <span class="bg-green">Private shower</span>
+                    </div>
+
+                    <div>
+                        <p>
+                            Small, bright and cosy, with two windows.
+                            Guests often call it romantic.
+                        </p>
+                    </div>
+
+                    <a href="reservations.html" class="compare-link">
+                        Book Studio 2
+                        <i class="material-icons" aria-hidden="true">east</i>
+                    </a>
+                </article>
+
+
+                <article class="rooms-card">
+                    <div>
+                        <img src="images/sauna&relax.jpg"
+                                alt="Studio 3">
+
+                        <div class="card-title">
+                            <h3>Sauna & relax</h3>
+                            <span>from 200 Kr/night</span>
+                        </div>
+                    </div>
+
+                    <div class="room-features">
+                        <span class="bg-gold">Add-on</span>
+                        <span class="bg-gold">IR sauna</span>
+                        <span class="bg-gold">Massage chair</span>
+                    </div>
+
+                    <div>
+                        <p>
+                            Infrared sauna with light therapy, a
+                            vibration plate and a massage chair. Book
+                            by the hour.
+                        </p>
+                    </div>
+
+                    <a href="reservations.html" class="compare-link">
+                        Sauna & relax
+                        <i class="material-icons" aria-hidden="true">east</i>
+                    </a>
+                </article>
+
+            </div>
+
+        </div>
+
+
+
+        <section class="guest-benefits">
+
+            <h1>Why guests come back</h1>
+
+            <section class="benefits-grid">
+                <article class="benefit-card">
+                    <i class="material-icons" aria-hidden="true">local_florist</i>
+                    <strong>A garden to slow down in</strong>
+                    <p>Seating all over the wild garden for
+                        breakfast or a quiet evening. Deer
+                        sometimes join.</p>
+                </article>
+
+                <article class="benefit-card">
+                    <i class="material-icons" aria-hidden="true">tram</i>
+                    <strong>The city, close by</strong>
+                    <p>Three metro stops to the Globen arena,
+                        five to the city centre. Parking on site.</p>
+                </article>
+
+
+                <article class="benefit-card">
+                    <i class="material-icons" aria-hidden="true">location_city</i>
+                    <strong>A real Stockholm home</strong>
+                    <p>Helen is a native Stockholmer and shares
+                        her favourite spots when you arrive.</p>
+                </article>
+            </section>
+
+        </section>
+
+
+
+        <section class="testimonials">
+
+            <h1>What our guests say</h1>
+
+            <section class="testimonials-grid">
+                <article class="testimonials-card">
+                    <p>“It was nice to stay in your house
+                        and see Sweden in this way".</p>
+                    <small>Therapist, Switzerland</small>
+                </article>
+
+                <article class="testimonials-card">
+                    <p>“Easy and comfortable to go to
+                        the Congress, nice and familiar
+                        in your home.”</p>
+                    <small>Scientist, Italy</small>
+                </article>
+
+
+                <article class="testimonials-card">
+                    <p>“We come back regularly, at least
+                        four times a year for the fair. We
+                        like this place.”</p>
+                    <small>Danish furniture company</small>
+                </article>
+            </section>
+
+        </section>
     </main>
 
 
