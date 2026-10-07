@@ -1,6 +1,6 @@
 .about-intro {
     display: flex;
-    gap: 64px;
+    justify-content: space-between;
     align-items: center;
     padding: 48px 0 96px;
 }
@@ -11,7 +11,7 @@
 }
 
 .about-intro-text {
-max-width: 560px;
+max-width: 50%;
 flex-grow: 1;
 }
 
@@ -38,7 +38,7 @@ color:var(--color-text);
 
 .about-house {
 display: flex;
-gap: 64px;
+justify-content:space-between;
 align-items: center;
 padding: 48px 0 96px;
 }
@@ -50,7 +50,7 @@ border-radius: 20px;
 
 .about-house-text {
 flex-grow: 1;
-max-width: 560px;
+max-width: 50%;
 }
 
 .about-house-text h2 {
@@ -60,18 +60,22 @@ font-size: 44px;
 color:var(--color-text);
 }
 
-about-house-text p {
+.about-house-text p {
 color: var(--color-text-secondary);
     font-size: 18px;
     line-height: 1.6;
 }
 
 .about-house ul {
-  flex-direction: column;
-  gap: 12px;
+  display: block;
+  list-style: disc;
+  padding-left: 20px;
+  gap: 16px;
 }
 
 .about-house li {
+    display: list-item;
+    margin-bottom: 12px;
     color: var(--color-text-secondary);
     font-weight: 400;
 }
