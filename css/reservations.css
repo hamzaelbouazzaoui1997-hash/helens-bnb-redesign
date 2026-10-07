@@ -3,12 +3,20 @@
     justify-content: center;
     padding-left:10%;
     padding-right: 10%;
+}
     
+#intro {
+    font-family: var(--font-heading) , sans-serif;
+    color: var(--color-text);
+    font-weight: lighter;
+    font-size: 2.5rem;
+    
+
 }
 
 table {
+    width:100%;
     background-color: var(--color-surface);
-    
     border-color: var(--color-border);
     border-radius: 1rem;
     padding: 2rem;
@@ -21,10 +29,17 @@ table {
         padding: 1rem;
         border-bottom: 1px solid; 
         border-color: var(--color-border);
+        
+        }
+        tr:hover {background-color: var(--color-tint);}
+        overflow: scroll;
+        tr:nth-child(7) {
+            color: var(--color-primary);
         }
 }
 
 #info-container {
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -39,19 +54,18 @@ table {
     margin-right: 1rem;
     border-color: var(--color-border);
 }
-
 #info-1 {
     background-color: var(--color-tint);  
     color: var(--color-text-secondary);  
 }
 
 #booking-container {
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
     column-gap: 3rem;    
-    margin-top:3rem;
-    
-    
+    margin-top: 3rem;
+    overflow: hidden;
 }
 
 #booking-form-container {
@@ -60,16 +74,24 @@ table {
     border: 1px solid;
     border-color: var(--color-border);
     border-radius: 1rem;
-    
+    padding: 2rem;
 }
 
+#side-container {
+    line-height: 1.8;
+
+    img {
+        width: 100%;
+        border-radius: 0.5rem;
+        justify-content: center;
+    }
+}
 
 input[type="text"],
-input[type="email"],
 input[type="date"],
-select,
-textarea {
-    width: 15rem;
+input[type="number"],
+select {
+    width: 95%;
     box-sizing: border-box;
     padding: 0.5rem 1rem;
     font: inherit;
@@ -79,46 +101,45 @@ textarea {
     border-color: var(--color-border);
 }
 
-input[type="number"] {
-  width: 12rem;
-    background-color: var(--color-surface);
-    border: 1px solid;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-spacing: 0.5rem;
-    border-color: var(--color-border);
-}
-
-
-.input-style {
-    background-color: var(--color-surface);
-    border: 1px solid;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    border-spacing: 0.5rem;
-    margin-right: 1rem;
-    border-color: var(--color-border);
-
-}
-
 fieldset {
     justify-content:center;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
     column-gap: 0.5rem;
     gap: 1rem 0.5rem;
     border: 1rem;
     min-width: 0;
     line-height: 1.3;
     
-
 }
 
-label {
+#room-field{
+    grid-template-columns: 1fr 1fr;
+}
+
+#checkin-guest {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+#rest-of-form {
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+#email {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    background-color: var(--color-surface);
+    border: 1px solid;
+    border-radius: 0.5rem;
+    border-color: var(--color-border);
+}
+
+label, legend {
   display: block;
-  font-size: 12px;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 6px;
 }
 
@@ -126,9 +147,10 @@ label {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 1rem;
   font-size: 14px;
   font-weight: 400;
+  
 }
 
 input[type=submit] {
@@ -146,37 +168,34 @@ input[type=submit] {
     justify-content: center;
 }
 
-
-
-img {
-    width: 35rem;
-    border-radius: 0.5rem;
-    justify-content: center;
-    width:30rem;
-    
-}
-
 textarea {
-  padding: 1rem;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 15px;
-  border: 1px solid var(--color-border);
-  width: 15rem;
-  
+    padding: 1rem;
+    width: 95%;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    background-color: var(--color-surface);
+    border: 1px solid;
+    border-radius: 0.5rem;
+    border-color: var(--color-border);
 }
 
-#side-container {
-    line-height: 1.8;
+.radio-style {
+    background-color: var(--color-surface);
+    border: 1px solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border-spacing: 0.5rem;
+    margin-right: 1rem;
+    border-color: var(--color-border);
+    font-size:1rem;
+    font-weight: 100;
 }
 
+.radio-style:checked {
+    background-color: var(--color-primary);
+}
 
-
-
-
-@media screen and (min-width: 800px) {
-  .contact-form {
-    grid-template-columns: 1fr 2fr;
-    gap: 24px;
-  }
+@media (max-width: 1299px){ 
+    
 }

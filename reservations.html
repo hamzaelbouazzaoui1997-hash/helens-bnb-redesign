@@ -11,13 +11,16 @@
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
-
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
 <main>
+    <div class="project-disclaimer">
+        <p>Redesign concept by FED28 students · not the official Helens B&B website</p>
+    </div>
     <header>
 
         <h2>Helen's B&B</h2>
@@ -34,7 +37,7 @@
     </header>
     <div id="reservations-page">
         <section>
-            <h1>Rooms & prices</h1>
+            <h1 id="intro">Rooms & prices</h1>
             <p>Compare the studios side by side, then send a booking request. Prices are per room, per night.</p>
         </section>
         <div>
@@ -97,28 +100,31 @@
         <div id="booking-container">
             <div id="booking-form-container"> 
                 <div>
-                <p><h2>Request a booking</h2>Helen confirms availability and payment details by mail</p>  
+                    <p>
+                        <h2>Request a booking</h2>
+                        Helen confirms availability and payment details by email.
+                    </p>  
                 </div>   
                 <form>
                     <fieldset id="room-field">
                         <legend>Room</legend>
-                        <div class="input-style">
-                            <input type="radio" id="studio1" name="studio" value="studio" checked />
-                            <label for="studio1">Studio 1</label>
-                        </div>
-                        <div class="input-style">
-                            <input type="radio" id="studio2" name="studio" value="studio" />
-                            <label for="studio2">Studio 2</label>
-                        </div>
+                        <label for="studio1" class="radio-style">
+                            <input type="radio" id="studio1" name="studio" value="studio1" />
+                            Studio 1
+                        </label>
+                        <label for="studio2" class="radio-style">
+                            <input type="radio" id="studio2" name="studio" value="studio2" />
+                            Studio 2
+                        </label>
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="checkin-guest">
                         <div>
                             <label for="checkin">Check in</label>
-                            <input class="input-style" type="date" id="" name="date">
+                            <input type="date" id="" name="date">
                         </div>
                         <div>
                             <label for="checkin">Check out</label>
-                            <input class="input-style" type="date" id="" name="date">
+                            <input type="date" id="" name="date">
                         </div>
                         <div>
                             <label for="guests">Guests:</label>
@@ -127,29 +133,30 @@
                         <div >
                             <label for="name">Name</label>
                                 <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                required
-                                minlength="4"
-                                maxlength="15"
-                                size="15"/>
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    minlength="4"
+                                    maxlength="40"
+                                    size="15"/>
                          </div>
-                        <div>
-                            <label for="email">Email</label>
+                    </fieldset>
+                    <fieldset id="rest-of-form">
+                        <label for="email">
+                            Email<br>
                             <input type="email" id="email" pattern=".+@example\.com" size="30" required />
-                        </div>
+                        </label>
                         <div>
-                            
-                            <div>
-                                <legend>Extras</legend>
-                                <input type="checkbox" name="extras" checked/>
-                                <label for="breakfast">Breakfast</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="extras" name="sauna" checked />
-                                <label for="sauna">Sauna & relax session</label>
-                            </div>
+                            <legend>Extras</legend> 
+                            <label>
+                                <input type="checkbox" name="extras"/>
+                                Breakfast
+                            </label>
+                            <label>
+                                <input type="checkbox" name="extras"/>
+                                Sauna & Relax Session
+                            </label>
                         </div>
                         <div>
                             <legend>Message (Optional)</legend>
@@ -167,9 +174,10 @@
                 
             </div>
            
-            <div>
-                <div><img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg" alt=""></div>
-                <div id="side-container"><h3>Good to know</h3>
+            <div  id="side-container">
+                <div><img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg" alt="">
+                </div>
+                <div><h3>Good to know</h3>
                 <p>Rated one of Stockholms best B&B since 2003.<br>
                 800 m from Svedmyra metro, with parking on site.<br>
                 Prefer to call? <a href="tel:+46 (0)736 323 074" >+46 (0)736 323 074</a></p></div>
@@ -201,8 +209,7 @@
             </div>
         </section>
         </div>
-            <p></p>"Student concept project by
-                    [names], Hyper Island. Not affiliated with [business]."</p>
+            <p>"Student concept project by [names], Hyper Island. Not affiliated with [business]."</p>
             <div>
     </footer>
     
