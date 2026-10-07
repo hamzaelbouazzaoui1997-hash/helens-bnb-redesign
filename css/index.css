@@ -8,6 +8,10 @@ h1{
     font-weight: lighter;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .banner {
     margin: 0 5rem 4rem 5rem;
     display: flex;
@@ -70,11 +74,6 @@ h1{
 .stats span {
     font-size: x-small;
 }
-
-
-
-
-
 
 .bg-surface {
     background-color: var(--color-surface);
@@ -191,3 +190,112 @@ h1{
 .testimonials-card{
     width: 20rem;
 }
+
+
+
+@media (max-width: 1024px) {
+    .banner,
+    .rooms-banner {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .rooms-card-container {
+        flex-wrap: wrap;
+    }
+
+    .guest-benefits {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .testimonials h1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .testimonials-grid {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin-top: 1rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+        margin: 0 1.25rem 3rem;
+    }
+
+    .banner h1 {
+        font-size: 2.4rem;
+    }
+
+    .banner-image img {
+        height: 240px;
+    }
+
+    .banner-buttons {
+        flex-wrap: wrap;
+    }
+
+    .stats {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .stats span {
+        font-size: 0.75rem;
+    }
+
+    .rooms-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 2.5rem 1.25rem 2rem;
+    }
+
+    .rooms-card-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.25rem;
+    }
+
+    .rooms-card {
+        width: 100%;
+        max-width: 26rem;
+    }
+
+    .guest-benefits {
+        margin: 3rem 1.25rem 2.5rem;
+    }
+
+    .benefits-grid {
+        flex-direction: column;
+    }
+
+    .testimonials h1 {
+        margin: 3rem 1.25rem 0;
+    }
+
+    .testimonials-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 1.5rem 1.25rem 3rem;
+    }
+
+    .testimonials-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
