@@ -204,6 +204,7 @@ color: var(--color-text-secondary);
     .distances,
     .about-contact-text {
         width: 100%;
+        max-width: 100%;
     }
 
     .about-intro-text h1 {
@@ -228,14 +229,13 @@ color: var(--color-text-secondary);
     .about-contact {
         padding: 64px 5rem;
     }
+}
 
-    /* Small phones */
+/* Small phones */
 @media (max-width: 600px) {
     body { margin: 1rem; }
     .about-house, .about-contact { margin-left: -1rem; margin-right: -1rem; padding: 48px 1rem; }
     .about-intro-text h1 { font-size: 32px; }
     .about-house-text h2, .about-location h2, .about-contact-text h2 { font-size: 26px; }
     .distances li { gap: 16px; }
-}
-
 }
