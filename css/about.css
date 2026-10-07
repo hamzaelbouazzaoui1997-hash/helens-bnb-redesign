@@ -138,3 +138,52 @@ color: var(--color-text-secondary);
     line-height: 1.6;
     color: var(--color-text-secondary);
 }
+
+/* Questions before you book */
+
+.about-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    margin: 0 -5rem;
+    padding: 80px 5rem;
+}
+
+.about-contact-text {
+    width: 50%;
+}
+
+.about-contact-text h2 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--color-surface);
+    margin: 0 0 12px;
+}
+
+.about-contact-text p {
+    font-size: 18px;
+    color: var(--color-tint);
+    margin: 0;
+}
+
+.about-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+    color: var(--color-tint);
+}
+
+.about-contact-info p {
+    margin: 0;
+}
+
+.about-contact-info a {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 10rem;
+}
