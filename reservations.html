@@ -17,24 +17,40 @@
 
 <body>
 
-<main>
-    <div class="project-disclaimer">
-        <p>Redesign concept by FED28 students · not the official Helens B&B website</p>
-    </div>
-    <header>
-
+<div class="project-disclaimer">
+    <p>Redesign concept by FED28 students · not the official Helens B&B website</p>
+</div>
+<header>
         <h2>Helen's B&B</h2>
-
-        <nav>
+        <nav class="web-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="reservations.html">Rooms & Price</a></li>
-                    <a href="reservations.html" class="book-btn">Book a room</a> </li>
+                <li>
+                    <a href="reservations.html" class="book-btn">Book a room</a>
+                </li>
             </ul>
         </nav>
 
-    </header>
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item active">
+            <i class="material-icons">home</i>
+        </a>
+
+
+        <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+            <i class="material-icons">calendar_month</i>
+        </a>
+
+        <a href="about.html" class="mobile-nav-item">
+            <i class="material-icons">info</i>
+        </a>
+    </nav>
+
+</header>
+
+<main>
     <div id="reservations-page">
         <section>
             <h1 id="intro">Rooms & prices</h1>
@@ -184,38 +200,32 @@
             </div>
             
         </div>
-
-        <footer>
-        <section >
-            <div>
-                <h1>Ready to stay? Pick your dates and Hellen will confirm by email</h1>
-            </div>
-
-            <div>
-                <a href="reservations.html" class="book-btn">Check availability</a>
-            </div>
-        </section>
-
-        <section>
-            <div>
-                <h2>Helen's B&B</h2>
-                <span>Östrandsvägen 15, Stockholm</span>
-            </div>
-            <div>
-
-            
-                <a href="tel:+46 (0)736 323 074" >+46 (0)736 323 074</a>
-                <a href="mailto:helensbedandbreakfast@gmail.com">helensbedandbreakfast@gmail.com</a>
-            </div>
-        </section>
-        </div>
-            <p>"Student concept project by [names], Hyper Island. Not affiliated with [business]."</p>
-            <div>
-    </footer>
-    
     </div>
 </main>
 
+<footer>
+    <section >
+        <div>
+            <h1>Ready to stay? Pick your dates and Hellen will confirm by email</h1>
+        </div>
+
+        <div>
+            <a href="reservations.html" class="book-btn">Check availability</a>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Helen's B&B</h2>
+            <span>Östrandsvägen 15, Stockholm</span>
+        </div>
+
+        <div>
+            <a href="tel:+46 (0)736 323 074" >+46 (0)736 323 074</a>
+            <a href="mailto:helensbedandbreakfast@gmail.com">helensbedandbreakfast@gmail.com</a>
+        </div>
+    </section>
+</footer>
 
 </body>
 </html>
