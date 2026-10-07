@@ -176,10 +176,6 @@ color: var(--color-text-secondary);
     color: var(--color-tint);
 }
 
-.about-contact-info p {
-    margin: 0;
-}
-
 .about-contact-info a {
     background-color: var(--color-surface);
     color: var(--color-primary);
