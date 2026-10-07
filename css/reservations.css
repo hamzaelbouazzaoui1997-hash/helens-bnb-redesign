@@ -1,5 +1,8 @@
 #reservations-page {
     color: var(--color-text);
+    justify-content: center;
+    padding-left:10%;
+    padding-right: 10%;
 }
 
 table {
@@ -40,15 +43,12 @@ table {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
-    justify-content: flex-start;
     border: 1px solid;
     border-color: var(--color-border);
     margin-top:3rem;
-    height: 70vw;
 }
 
 #booking-form-container {
-    width: 100%;
     color: var(--color-text-secondary);
     background-color: var(--color-surface);;  
     border: 1px solid;
@@ -73,6 +73,6 @@ fieldset {
 }
 
 img {
-    width: 30vw;
+    width: 30rem;
     border-radius: 0.5rem;
 }
