@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
 
     <title>About | Helen's B&B</title>
 
@@ -10,19 +12,17 @@
     <link rel="stylesheet" href="./css/about.css">
 
     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
+        href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-<main>
     <header>
-
         <h2>Helen's B&B</h2>
-
-        <nav>
+        <nav class="web-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -33,9 +33,104 @@
             </ul>
         </nav>
 
-    </header>
-</main>
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-item">
+                <i class="material-icons">home</i>
+            </a>
 
+
+            <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+                <i class="material-icons">calendar_month</i>
+            </a>
+
+            <a href="about.html" class="mobile-nav-item active">
+                <i class="material-icons">info</i>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="about-intro">
+            <img src="images/about_heleninthegarden.png" alt="Helen, the owner, in the garden">
+            <div class="about-intro-text">
+                <p class="label">Who is Helen?</p>
+                <h1>From art teacher to host of travellers</h1>
+                <p>In 1998 Helen left her career as an art teacher and
+                    travelled to Tibet with a video camera, making a
+                    documentary about life in an exile monastery. Longer
+                    stays in Mexico, India and Indonesia followed.</p>
+                <p>Those encounters stayed with her. In 2003 she opened
+                    her home to travellers, so the meetings could continue
+                    in Stockholm.</p>
+            </div>
+        </div>
+
+        <div class="about-house">
+            <div class="about-house-text">
+                <h2>The house and garden</h2>
+                <p>A typical Swedish home in a green, quiet neighbourhood with fresh air and little traffic. A small
+                    woodland with walking paths, a bakery and a restaurant is within walking distance.</p>
+                <ul>
+                    <li>Wild garden with several seating areas</li>
+                    <li>Parking on site</li>
+                    <li>Several restaurants within 1.5 km</li>
+                    <li>We recycle and care about the environment</li>
+                </ul>
+            </div>
+            <img src="images/about_houseandgarden.png" alt="Helen's B&amp;B, The house and the garden">
+        </div>
+
+        <div class="about-location">
+            <h2>Getting here</h2>
+            <div class="about-location-row">
+                <div class="distances">
+                    <ul>
+                        <li>Svedmyra metro station <span>800 m</span></li>
+                        <li>Globen arena<span>2 km · 3 stops</span></li>
+                        <li>Stockholmsmässan, Älvsjö<span>3.5 km</span></li>
+                        <li>Södermalm<span>3.6 km</span></li>
+                        <li>Gamla Stan<span>4.9 km</span></li>
+                        <li>Central Station<span>5.5 km · 5 stops</span></li>
+                    </ul>
+                    <p>About 20 minutes by public transport or 10 by car from the city centre.
+                        Airport buses and Arlanda Express connect to the metro.</p>
+                </div>
+                <img src="images/about_BnBmap.png" alt="A map showing the B&amp;B's location.">
+            </div>
+        </div>
+
+        <div class="about-contact">
+            <div class="about-contact-text">
+                <h2>Thinking about booking?</h2>
+                <p>Helen is happy to help with any questions you might have.</p>
+            </div>
+            <div class="about-contact-info">
+                <a href="reservations.html">Send a booking request →</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <section>
+            <div>
+                <h2>Helen's B&B</h2>
+                <span>Östrandsvägen 15, Stockholm</span>
+            </div>
+
+            <div>
+                <a href="tel:+46 (0)736 323 074">+46 (0)736 323 074</a>
+                <a href="mailto:helensbedandbreakfast@gmail.com">helensbedandbreakfast@gmail.com</a>
+            </div>
+        </section>
+        <div>
+            <p>Student concept project by Sarah Lindén, Konstantina Migadaki, Hamza El Bouazaoui, Ayodeji Dairo , Hyper
+                Island. Not affiliated with Helen's B&B.</p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
