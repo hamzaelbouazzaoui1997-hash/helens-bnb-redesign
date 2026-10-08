@@ -44,6 +44,7 @@ table {
     flex-wrap: wrap;
     margin-top: 1rem;
 }
+
 .info {
     min-width: fit-content;
     background-color: var(--color-surface);
