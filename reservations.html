@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="robots" content="noindex">
     <title>Reservations | Helen's B&B</title>
 
     <link rel="stylesheet" href="./css/style.css">
@@ -11,18 +11,18 @@
 
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Figtree:wght@400;500;600&display=swap">
-
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
 
-<main>
-    <header>
-
+<div class="project-disclaimer">
+    <p>Redesign concept by FED28 students · not the official Helens B&B website</p>
+</div>
+<header>
         <h2>Helen's B&B</h2>
-
-        <nav>
+        <nav class="web-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -33,9 +33,199 @@
             </ul>
         </nav>
 
-    </header>
+    <nav class="mobile-nav">
+        <a href="index.html" class="mobile-nav-item active">
+            <i class="material-icons">home</i>
+        </a>
+
+
+        <a href="reservations.html" class="mobile-nav-item mobile-nav-book">
+            <i class="material-icons">calendar_month</i>
+        </a>
+
+        <a href="about.html" class="mobile-nav-item">
+            <i class="material-icons">info</i>
+        </a>
+    </nav>
+
+</header>
+
+<main>
+    <div id="reservations-page">
+        <section>
+            <h1 id="intro">Rooms & prices</h1>
+            <p>Compare the studios side by side, then send a booking request. Prices are per room, per night.</p>
+        </section>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Studio 1</th>
+                    <th>Studio 2</th>
+                    <th>Sauna & relax</th>
+                </tr>
+                <tr>
+                    <td>Guests</td>
+                    <td>Up to 3 (extra bed)</td>
+                    <td>2</td>
+                    <td>Add-on to any stay</td>
+                </tr>
+                <tr>
+                    <td>Bed</td>
+                    <td>Queen 140 cm, firm</td>
+                    <td>Queen 140 cm, firm</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Highlights</td>
+                    <td>Dining area for 3, plenty of storage</td>
+                    <td>Two windows, private shower, kitchen</td> <!--private shower???-->
+                    <td>IR Sauna, vibration plate, massage chair</td>
+                </tr>
+                <tr>
+                    <td>Low season</td>
+                    <td>860 SEK</td>
+                    <td>800 SEK</td>
+                    <td>200-350 SEK/h</td>
+                </tr>
+                <tr>
+                    <td>High season</td>
+                    <td>890 SEK</td>
+                    <td>860 SEK</td>
+                    <td>200-350/h</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Book studio 1-></td>
+                    <td>Book stidio 2-></td>
+                    <td>Add to your stay-></td>
+                </tr>          
+            </table>
+        </div>
+        <div id="info-container"> <!--extra info-->
+            <div id="info-1" class="info"> 
+            <b>Longer stays</b> from 450 SEK/night 
+            </div>
+            <div class="info">
+                Breakfast not included, add it below
+            </div>
+            <div class="info">
+                Stays over 7 nights: one person per room
+            </div>
+        </div>
+        <div id="booking-container">
+            <div id="booking-form-container"> 
+                <div>
+                    <p>
+                        <h2>Request a booking</h2>
+                        Helen confirms availability and payment details by email.
+                    </p>  
+                </div>   
+                <form>
+                    <fieldset id="room-field">
+                        <legend>Room</legend>
+                        <label for="studio1" class="radio-style">
+                            <input type="radio" id="studio1" name="studio" value="studio1" />
+                            Studio 1
+                        </label>
+                        <label for="studio2" class="radio-style">
+                            <input type="radio" id="studio2" name="studio" value="studio2" />
+                            Studio 2
+                        </label>
+                    </fieldset>
+                    <fieldset id="checkin-guest">
+                        <div>
+                            <label for="checkin">Check in</label>
+                            <input type="date" id="" name="date">
+                        </div>
+                        <div>
+                            <label for="checkin">Check out</label>
+                            <input type="date" id="" name="date">
+                        </div>
+                        <div>
+                            <label for="guests">Guests:</label>
+                            <input type="number" id="guests" name="guests" min="1" max="3" />
+                        </div>
+                        <div >
+                            <label for="name">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    minlength="4"
+                                    maxlength="40"
+                                    size="15"/>
+                         </div>
+                    </fieldset>
+                    <fieldset id="rest-of-form">
+                        <label for="email">
+                            Email<br>
+                            <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+                        </label>
+                        <div>
+                            <legend>Extras</legend> 
+                            <label>
+                                <input type="checkbox" name="extras"/>
+                                Breakfast
+                            </label>
+                            <label>
+                                <input type="checkbox" name="extras"/>
+                                Sauna & Relax Session
+                            </label>
+                        </div>
+                        <div>
+                            <legend>Message (Optional)</legend>
+                            <textarea>
+                                
+                            </textarea>
+                        </div>
+                        <div>
+                            <label for="submit"></label>
+                            <input type="submit" value="Request a booking"/>
+                        </div>
+                    </fieldset>
+                
+                </form>
+                
+            </div>
+           
+            <div  id="side-container">
+                <div><img src="images/a-tray-of-breakfast-on-a-bed-with-white-sheets.jpg" alt="">
+                </div>
+                <div><h3>Good to know</h3>
+                <p>Rated one of Stockholms best B&B since 2003.<br>
+                800 m from Svedmyra metro, with parking on site.<br>
+                Prefer to call? <a href="tel:+46 (0)736 323 074" >+46 (0)736 323 074</a></p></div>
+            </div>
+            
+        </div>
+    </div>
 </main>
 
+<footer>
+    <section >
+        <div>
+            <h1>Ready to stay? Pick your dates and Hellen will confirm by email</h1>
+        </div>
+
+        <div>
+            <a href="reservations.html" class="book-btn">Check availability</a>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h2>Helen's B&B</h2>
+            <span>Östrandsvägen 15, Stockholm</span>
+        </div>
+
+        <div>
+            <a href="tel:+46 (0)736 323 074" >+46 (0)736 323 074</a>
+            <a href="mailto:helensbedandbreakfast@gmail.com">helensbedandbreakfast@gmail.com</a>
+        </div>
+    </section>
+</footer>
 
 </body>
 </html>
