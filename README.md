@@ -28,7 +28,7 @@ Helen's B&B is a small bed and breakfast in Enskede, south Stockholm (Östrandsv
 helens-bnb-redesign/
 ├── index.html            Home page
 ├── about.html            About Helen, the house, getting here
-├── reservations.html     Rooms, prices and booking request
+├── reservations.html     Rooms, prices, booking form and request
 ├── css/
 │   ├── style.css         Shared styles: colors, fonts, header, footer, buttons, mobile nav
 │   ├── index.css         Home page only
@@ -41,7 +41,7 @@ helens-bnb-redesign/
 
 - Every page loads `style.css` first, then its own page file. The page file can override shared styles.
 - Colors and fonts are CSS variables in `:root` at the top of `style.css`, for example `var(--color-primary)`.
-- Layout uses flexbox. On screens 768px and smaller, the top nav is replaced by a bottom bar (`.mobile-nav`).
+- Layout uses flexbox and grid. On screens 768px and smaller, the top nav is replaced by a bottom bar (`.mobile-nav`).
 
 ### Colors
 
