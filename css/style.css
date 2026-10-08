@@ -42,7 +42,7 @@ body {
 
 
 header{
-    margin: 0 5rem;
+    margin: 4rem 5rem 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,7 +127,7 @@ footer{
 
 @media (max-width: 768px) {
     header {
-        margin: 0 1.25rem;
+        margin: 4rem 1.25rem 1.25rem;
         padding: 0.5rem 0;
     }
 
