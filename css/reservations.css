@@ -12,6 +12,10 @@
     font-size: 2.5rem;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 table {
     width:100%;
     background-color: var(--color-surface);

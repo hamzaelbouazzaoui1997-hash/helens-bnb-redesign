@@ -48,6 +48,16 @@ header{
     align-items: center;
 }
 
+.menu-active{
+    background: var(--color-tint);
+    text-shadow: 2px 2px 4px #ffffff;
+    font-size: large;
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+    border-radius: 10rem;
+
+}
+
 header, h2{
     font-family: var(--font-heading) , sans-serif;
     color: var(--color-primary);
@@ -106,7 +116,7 @@ li button:hover {
 
 
 footer{
-    margin: 1rem 5rem;
+    margin: 3rem 5rem;
     display: flex;
     flex-direction: column;
 
@@ -158,6 +168,7 @@ footer{
         border-radius: 50%;
         color: var(--color-text-secondary);
     }
+
 
     .mobile-nav-item.active {
         color: var(--color-primary);
